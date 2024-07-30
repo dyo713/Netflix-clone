@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Fetch Code') {
             steps {
-                git 'https://github.com/dyo713/Netflix-clone.git'
+                git branch: 'main', url: 'https://github.com/dyo713/Netflix-clone.git'
             }
         }
         stage('Code Analysis') {
